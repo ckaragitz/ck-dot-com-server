@@ -51,7 +51,7 @@ class GitHub:
                 )
             )
 
-@app.route('/api/repos', methods=['GET'])
+@app.route('/api/git/repos', methods=['GET'])
 def get_repos(): 
 
     g = GitHub(repo = "all")
@@ -59,7 +59,7 @@ def get_repos():
     results = g.main(repo = "all")
     return jsonify(results)
 
-@app.route('/api/repos/<repo>', methods=['GET'])
+@app.route('/api/git/repos/<repo>', methods=['GET'])
 def get_repo(repo): 
 
     g = GitHub(repo)
