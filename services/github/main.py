@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 class GitHub:
 
-    ACCESS_TOKEN = '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' 
+    ACCESS_TOKEN = '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' 
     API_HOST = 'https://api.github.com'
     ALL_REPO_PATH = '/users/ckaragitz/repos'
     REPO_PATH = '/repos/ckaragitz/'
