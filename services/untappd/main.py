@@ -25,7 +25,7 @@ class Untappd:
             url = self.API_HOST + self.USER_BEER_PATH
 
         headers = {
-            'Authorization': 'bear %s' % self.ACCESS_TOKEN,
+            'Authorization': 'bearer %s' % self.ACCESS_TOKEN,
         }
 
         params = {
